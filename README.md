@@ -2,7 +2,7 @@
 This script is designed to analyze the behavior test of mice mechanical pain
 
 ## preparation
-* behavior data should be changed to such format:
+behavior data should be changed to such format:
 ```
 @VgatChR2-CPN one week
 @pre
@@ -25,10 +25,19 @@ OXOOXO 0.6
 * running script on Windows: click on it
 
 ## parameters
+After starting, such parameter should be enterd in the shell envrionment
 * data filename
 * n number for each group
+```
+Apple$ python kf.py
+Please enter your data's filename
+test.txt
+Please enter your n number
+5
+```
 
 ## output file
+The pair t-test result of the data based on 50%threshold value
 ```
 Xf k Xf+k*0.224 molecular 50%threshold
 @VgatChR2-CPN one week
